@@ -180,21 +180,6 @@ class Post extends React.Component {
       marginRight: "5px"
     };
 
-    const btn4Style = {
-      backgroundColor: "Transparent",
-      backgroundRepeat:"no-repeat",
-      border: "none",
-      overflow: "hidden",
-      outline:"none",
-      borderRadius : "20px",
-      cursor : "pointer",
-      float  : "right",
-      padding : "4px 5px",
-      marginTop: "60px",
-      marginLeft: "3px",
-      marginRight: "2px"
-    };
-
       
       let route = this.props.routeInfo;
 
@@ -205,8 +190,8 @@ class Post extends React.Component {
           <button onClick={this.props.modifyPost.bind(this, this.props.p, route)} style={btn3Style}><img src={edit} alt={"Modify Post"} style={{width: "25px", height: "25px"}} title={"Modify Post"}/></button>
           <button onClick={this.props.deletePost.bind(this, id)} style={btn1Style} title={"Delete Post"}>X</button>
           <button onClick={this.props.filterPost.bind(this, postType)} style={btn2Style}  title={"Filter Post by Type"}><img className="filterBtn" src={this.getIcon(postType)} alt={"Filter Button"} style={{width: "25px", height: "25px"}}/></button>
-          <button onClick={this.props.switchPostType.bind(this, btn1Type, this.props.p)} style={btn4Style} title={"Change Post Type"} ><img src={this.getIcon(btn1Type)} alt={"Move Button"} style={{width: "25px", height: "25px"}}/></button>
-          <button onClick={this.props.switchPostType.bind(this, btn2Type, this.props.p)} style={btn4Style}  title={"Change Post Type"} ><img src={this.getIcon(btn2Type)} alt={"Move Button"} style={{width: "25px", height: "25px"}}/></button>
+          <button className="switchtype2" onClick={this.props.switchPostType.bind(this, btn1Type, this.props.p)} title={"Change Post Type"} ><img src={this.getIcon(btn1Type)} alt={"Move Button"} style={{width: "25px", height: "25px"}}/></button>
+          <button id="switchtype1" onClick={this.props.switchPostType.bind(this, btn2Type, this.props.p)}  title={"Change Post Type"} ><img src={this.getIcon(btn2Type)} alt={"Move Button"} style={{width: "25px", height: "25px"}}/></button>
              
          
           <details  style={{ marginLeft: "20px", outline: "none", textAlign: "left"}}>
