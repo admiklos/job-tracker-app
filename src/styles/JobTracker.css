@@ -64,14 +64,21 @@
   color: #000#FEF9C7;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .Form {
     width: 70%;
     padding: 10px 40px 5px 40px;
-    margin-left: 300px;
-    margin-top: 50px;
+    margin-left: 15px;
+    margin-top: 40px;
   }
 }
+
+@media (min-width: 600px) {
+  .Form {
+    border-style: none;
+  }
+}
+
 
 h1 {
   text-align: center;
@@ -99,6 +106,13 @@ input {
   input {
     width: 60%;
     margin-right: 30px;
+  }
+}
+
+@media (max-width: 800px) {
+  input {
+    width: 95%;
+    
   }
 }
 

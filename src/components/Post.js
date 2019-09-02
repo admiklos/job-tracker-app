@@ -194,7 +194,7 @@ class Post extends React.Component {
           <button id="switchtype1" onClick={this.props.switchPostType.bind(this, btn2Type, this.props.p)}  title={"Change Post Type"} ><img src={this.getIcon(btn2Type)} alt={"Move Button"} style={{width: "25px", height: "25px"}}/></button>
              
          
-          <details  style={{ marginLeft: "20px", outline: "none", textAlign: "left"}}>
+          <details  style={{ marginLeft: "10px", outline: "none", textAlign: "left"}}>
           <summary style={{marginLeft: "10px", outline: "none", textAlign: "left"}}>{compName}</summary>
           
           {this.address(compSA, compCS, compZip)}
