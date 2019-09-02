@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import JobTracker from './App';
+import JobTracker from './components/JobTracker';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<JobTracker />, document.getElementById('root'));
